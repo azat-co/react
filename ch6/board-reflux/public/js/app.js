@@ -89,7 +89,7 @@ var NewMessage = React.createClass({displayName: "NewMessage",
 var MessageList = React.createClass({displayName: "MessageList",
   render: function(){
     var messages = this.props.messages
-    if (!messages.length > 0) return (
+    if (messages.length == 0) return (
       React.createElement("p", null, 
         "No messages yet"
       )
