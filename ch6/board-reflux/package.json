@@ -22,7 +22,7 @@
     "express": "4.13.1",
     "express-validator": "2.13.0",
     "mongodb": "2.0.36",
-    "morgan": "1.6.1"
+    "morgan": "1.9.1"
   },
   "devDependencies": {
     "gulp": "3.9.0",
