@@ -7,6 +7,10 @@ var rules = {
     message: 'Must have at least one upper-case character',
     pattern: /([A-Z]+)/
   },
+  havequetionmark:{
+  message: 'Must have at least one ?',
+    pattern: /([?]+)/},
+    
   lowerCase: {
     message: 'Must have at least one lower-case character',
     pattern: /([a-z]+)/
