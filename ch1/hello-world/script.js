@@ -1,4 +1,4 @@
- var HelloWorld = React.createClass({
+ let HelloWorld = React.createClass({
   render: function render() {
     return React.createElement('h1', null, 'Hello world!!!')
   }
