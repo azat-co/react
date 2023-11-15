@@ -1,15 +1,15 @@
-var ExampleApplication = React.createClass({
+let ExampleApplication = React.createClass({
   render: function() {
-    var elapsed = Math.round(this.props.elapsed  / 100);
-    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-    var message =
+    let elapsed = Math.round(this.props.elapsed  / 100);
+    let seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    let message =
       'React has been successfully running for ' + seconds + ' seconds.';
 
     return <p>{message}</p>;
   }
 });
 
-var start = new Date().getTime();
+let start = new Date().getTime();
 
 setInterval(function() {
   ReactDOM.render(
