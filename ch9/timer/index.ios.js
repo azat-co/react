@@ -26,7 +26,7 @@ var TimerWrapper = React.createClass({
   toggleTime(){
     let time = this.state.time
     if (time == 0 ) time = null
-    this.setState({isMinutes: !this.state.isMinutes, time: time})
+    this.setState(state => ({ ...state, isMinutes: !this.state.isMinutes, time: time}))
   },
   startTimer(time) {
     clearInterval(this.state.int)
